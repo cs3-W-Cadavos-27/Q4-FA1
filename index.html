@@ -171,7 +171,7 @@ p{
                     
                     <div class="input-box">
                         <span class="details">Phone Number</span>
-                        <input type="text" placeholder="Enter your Number" id="suarez" required onblur="gwapa(this)" onfocus="hahaha(this)">
+                        <input type="number" placeholder="Enter your Number" id="suarez" required onblur="gwapa(this)" onfocus="hahaha(this)">
                     </div>
                     
                     <div class="input-box">
@@ -197,6 +197,7 @@ p{
         <h5 id="b">Username: </h5> <br>
         <h5 id="c">Gender: </h5> <br>
         <h5 id="d">Email: </h5> <br>
+        <h5 id="h">Password: </h5> <br>
         <h5 id="e">Phone Number: </h5> <br>
         <h5 id="f">Address: </h5> <br>
         <h5 id="g">Message: </h5> <br>
@@ -244,11 +245,13 @@ function userInput() {
     var s = document.getElementById("wendy").value;
     var y = document.getElementById("suarez").value;
     var t = document.getElementById("cadavos").value;
+    var b = " *--secret diko sabi--* ";
 		
     document.getElementById("a").innerHTML =  "Full Name: " + h ;
     document.getElementById("b").innerHTML =  "Username: " + a ;
     document.getElementById("c").innerHTML =  "Gender: " + p ;
     document.getElementById("d").innerHTML =  "Email: " + y ;
+    document.getElementById("h").innerHTML =  "Password: " + b ;
     document.getElementById("e").innerHTML =  "Phone Number: " + s ;
     document.getElementById("f").innerHTML =  "Address: " + y ;
     document.getElementById("g").innerHTML =  "Message: " + t ;
