@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+.container{
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.container .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.container .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+textarea{
+  height: 150px;
+  width: 640px;
+  resize: none;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  justify-content: space-between;
+  padding: 5px 0 0 15px;
+  transition: all 0.3s ease;
+}
+
+.user-details .input-box textarea:focus,
+.user-details .input-box textarea:valid{
+  border-color: #9b59b6;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #9b59b6;
+}
+
+ form input[type="radio"]{
+   display: none;
+ }
+ form .button{
+   height: 45px;
+   margin: 10px 0 0px 0;
+ }
+ form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 650;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: #eeaeca;
+ }
+ form .button input:hover{
+  background: #94bbe9;
+  }
+
+p{
+    font-size: 14px;
+    margin: 15px 0;
+    display: inline-block;
+    color: #ffffff;
+}
+</style>
+
+<body>
+    
+<div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+        <form action="#" onsubmit="return userInput()">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" placeholder="Enter your Name" id="arang" required onblur="gwapa(this)" onfocus="hahaha(this)">
+                    </div>
+                    
+                    <div class="input-box">
+                        <span class="details">Username</span>
+                        <input type="text" placeholder="Enter your Username" id="ka" required onblur="gwapa(this)" onfocus="hahaha(this)">
+                    </div>
+                    
+                    <div class="input-box">
+                        <span class="details">Gender</span>
+                        <select name="gender" class="details" id="wow" required onblur="gwapa(this)" onfocus="hahaha(this)">
+                            <option value="N/A">Gender</option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                            <option value="rather not say">Rather not say</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="email" placeholder="Enter your Email" id="ni" required onblur="gwapa(this)" onfocus="hahaha(this)">
+                    </div>
+                    
+                    <div class="input-box">
+                        <span class="details">Address</span>
+                        <input type="text" placeholder="Enter your Address" id="wendy" required onblur="gwapa(this)" onfocus="hahaha(this)">
+                    </div>
+                    
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="password" id="password" placeholder="Enter your Password" required onblur="gwapa(this)" onfocus="hahaha(this)">
+                    </div>
+                    
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input type="text" placeholder="Enter your Number" id="suarez" required onblur="gwapa(this)" onfocus="hahaha(this)">
+                    </div>
+                    
+                    <div class="input-box">
+                        <span class="details">Confirm Password</span>
+                        <input type="password" id="cnfrm-password" placeholder="Confirm Password" required onblur="gwapa(this)" onfocus="hahaha(this)">
+                    </div>
+                    
+                    <div class="input-box">
+                        <span class="details">Message</span>
+                        <textarea name="text" placeholder="Enter your Message" id="cadavos" required onblur="gwapa(this)" onfocus="hahaha(this)"></textarea>
+                    </div>
+                </div>
+                
+            
+            <div class="button">
+                <input type="button" onclick="return userInput()" value="Register">
+            </div>
+            
+            <div id="output"></div>
+                
+    <div class="title">Output: </div>
+        <h5 id="a">Name: </h5> <br>
+        <h5 id="b">Username: </h5> <br>
+        <h5 id="c">Gender: </h5> <br>
+        <h5 id="d">Email: </h5> <br>
+        <h5 id="e">Phone Number: </h5> <br>
+        <h5 id="f">Address: </h5> <br>
+        <h5 id="g">Message: </h5> <br>
+    
+            <div class="button">
+                <input type="reset" onclick="resetthingy()" value="RESET">
+            </div>
+            
+        </form>
+    </div>
+    
+</div>
+
+
+<script>
+function gwapa(inputElement) {
+    if (inputElement.value.trim() === "") {
+        inputElement.style.borderColor = "red";
+    } else {
+        inputElement.style.borderColor = "green";
+    }
+}
+
+function hahaha(inputElement) {
+    inputElement.style.borderColor = "#ccc";
+}
+
+function userInput() {
+    let password = document.getElementById("password").value;
+    let cnfrmPassword = document.getElementById("cnfrm-password").value;
+    let message = document.getElementById("output");
+
+    if (password !== cnfrmPassword) {
+        message.textContent = "Passwords don't match!";
+        message.style.color = "red";
+    } else {
+        message.textContent = "Passwords match! You are officially registered!";
+        message.style.color = "green";
+    }
+
+    var h = document.getElementById("arang").value;
+    var a = document.getElementById("ka").value;
+    var p = document.getElementById("wow").value;
+    var y = document.getElementById("ni").value;
+    var s = document.getElementById("wendy").value;
+    var y = document.getElementById("suarez").value;
+    var t = document.getElementById("cadavos").value;
+		
+    document.getElementById("a").innerHTML =  "Full Name: " + h ;
+    document.getElementById("b").innerHTML =  "Username: " + a ;
+    document.getElementById("c").innerHTML =  "Gender: " + p ;
+    document.getElementById("d").innerHTML =  "Email: " + y ;
+    document.getElementById("e").innerHTML =  "Phone Number: " + s ;
+    document.getElementById("f").innerHTML =  "Address: " + y ;
+    document.getElementById("g").innerHTML =  "Message: " + t ;
+
+    return false
+}
+		
+function resetthingy(){
+    document.getElementById("a").innerHTML =  "Full Name: " + "" ;
+    document.getElementById("b").innerHTML =  "Username: " + "" ;
+    document.getElementById("c").innerHTML =  "Gender: " + "" ;
+    document.getElementById("d").innerHTML =  "Email: " + "" ;
+    document.getElementById("e").innerHTML =  "Phone Number: " + "" ;
+    document.getElementById("f").innerHTML =  "Address: " + "" ;
+    document.getElementById("g").innerHTML =  "Message: " + "" ;
+}
+</script>
+
+</body>
+</html>
